@@ -8,17 +8,21 @@ body{
 }
 #header-principal{
     height: 100px;
-    width: 100%;
+    width: 50%;
     background-color: rgba(139, 69, 19, 0.877);
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 5%;
+    border-radius: 50px;
 }
 #div-da-foto{
     width: 100%;
-    height: 60vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
 }
 #div-da-foto div{
-    width: 70%;
+    width: 100%;
     height: 100%;
 
 }
@@ -27,10 +31,18 @@ body{
     display:block; 
     height: 100%;
 }
-#footer-da-foto{
+section{
     width: 100%;
-    height: 100px;
+    height: 1000px;
     background-color: rgba(139, 69, 19, 0.877);
-    position: absolute;
 }
-
+#header-1{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
