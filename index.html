@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilo/main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="Estilo/cssdoslider.css">
+    <title>Site Hamburguer</title>
 </head>
 <body>
-    <header id="header-principal"></header>
-    <div id="div-da-foto">
-        <div><img src="Estilo/front-view-burger-on-a-stand.jpg" alt=""></div>
+    <header id="header-principal">
+        <div><a href="#header-principal">Home</a></div>
+        <div><a href="#header-1">Cardápio</a></div>
+        <div><a href="">Sobremesas</a></div>
+        <div><a href="">Delivery</a></div>
+        <div><a href="">Fale conosco</a></div>
+    </header>
+    <div id="dvslider">
+        <button class="btSlider" onclick="troca(-1)"><</button>
+        <button class="btSlider" onclick="troca(1)">></button>
     </div>
     <section>
         <header id="header-1">
@@ -21,4 +29,5 @@
     
     
 </body>
+<script src="script/jsdoslider.js"></script>
 </html>
