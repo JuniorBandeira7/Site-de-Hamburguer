@@ -1,7 +1,6 @@
 #dvslider{
-    width: 99.9%;
+    width: 100%;
     height: 85vh;
-    border: 1px solid #000;
     overflow: hidden no-repeat;
     background-size: cover;
     background-position: center;
