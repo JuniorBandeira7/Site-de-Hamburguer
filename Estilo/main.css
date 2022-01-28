@@ -107,7 +107,7 @@ iframe{
     margin-top: 20px;
 }
 #delivery-section{
-    height: 1000px;
+    height: 900px;
 }
 #fale-conosco{
     background-color: #ffffff9f;
@@ -130,7 +130,6 @@ form{
     width: 70%;
     align-items: center;
     justify-content: center;
-    margin-top: -5%;
 }
 form input, textarea{
     margin-top: 15px;
@@ -156,4 +155,27 @@ form div{
 }
 #f-telefone{
     margin-left: 10px;
+}
+#btn{
+    height: 50px;
+    background-color: #8b4513;
+    border: none;
+    width: 13.5vw;
+    color: black;
+    margin-right: 51%;
+    cursor: pointer;
+}
+footer{
+    background-color: #8b4513;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
