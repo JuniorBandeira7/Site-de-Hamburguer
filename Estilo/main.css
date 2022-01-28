@@ -12,7 +12,7 @@ body{
 #header-principal{
     height: 100px;
     width: 50%;
-    background-color: #8b4513e0;
+    background-color: #00000086;
     position: absolute;
     margin-left: 25%;
     margin-top: 5%;
@@ -112,6 +112,9 @@ iframe{
 #fale-conosco{
     background-color: #ffffff9f;
     height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #fale-conosco header{
     display: flex;
@@ -119,4 +122,38 @@ iframe{
 }
 h1{
     font-size: 3rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 70px);
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5%;
+}
+form input, textarea{
+    margin-top: 15px;
+    border-color: #00000044;
+    outline: none;
+}
+form input:focus, textarea:focus{
+    background-color: #eaebff;
+}
+form input{
+    height: 24px
+}
+form div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#f-email, #f-assunto, textarea{
+    width: 70%;
+}
+#f-nome, #f-telefone{
+    width: calc(35% - 8px);
+}
+#f-telefone{
+    margin-left: 10px;
 }
