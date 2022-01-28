@@ -1,5 +1,10 @@
 *{
     margin: 0;
+    font-family: bk;
+}
+@font-face{
+    font-family: bk;
+    src: url('fonte/Insanibu.ttf');
 }
 html{
     scroll-behavior: smooth;
@@ -84,6 +89,7 @@ a{
 .div-cardapio img{
     width: 80%;
     height: 60%;
+    box-shadow: 10px 10px 40px;
 }
 .div-cardapio div{
     display: flex;
@@ -178,4 +184,15 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+/* Animação */
+
+[data-anima]{
+    opacity: 0;
+    transition: .6s;
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anima].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
