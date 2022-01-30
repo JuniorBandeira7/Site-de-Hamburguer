@@ -11,37 +11,28 @@ html{
 }
 body{
     width: 100%;
-    background-image: url(black-brick-wall-textured-background.jpg);
+    background-image: url(black-brick-wall-textured-background-min.jpg);
     min-height: 100vh;
 }
 #header-principal{
+    position: absolute;
     height: 100px;
     width: 50%;
-    background-color: #00000086;
-    position: absolute;
     margin-left: 25%;
     margin-top: 5%;
-    border-radius: 50px;
+}
+nav, ul{
+    width: 100%;
+    height: 100%;
+    background-color: #00000086;
     display: flex;
-    align-content: center;
     align-items: center;
     justify-content: space-around;
+    border-radius: 50px;
+    list-style: none;
 }
-#div-da-foto{
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-}
-#div-da-foto div{
-    width: 100%;
-    height: 100%;
-
-}
-#div-da-foto img{
-    width: 100%; 
-    display:block; 
-    height: 100%;
+ul{
+    padding: 0;
 }
 section{
     width: 100%;
@@ -100,7 +91,7 @@ a{
 .descricao, h3{
     margin-top: 15px;
 }
-iframe{
+#iframe{
     margin-top: 15px;
     width: 100%;
     height: 600px;
@@ -115,7 +106,7 @@ iframe{
 #delivery-section{
     height: 900px;
 }
-#fale-conosco{
+#fale-conosco{/*20*/
     background-color: #ffffff9f;
     height: 800px;
     display: flex;
@@ -195,4 +186,88 @@ footer{
 [data-anima].animate{
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
+}
+@media(max-width: 1160px){
+    a{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 950px){
+    a{
+        font-size: 1.1rem;
+    }
+    h1{
+        font-size: 2.7rem
+    }
+    .descricao{
+        font-size: .8rem
+    }
+    form{
+        width: 100%;;
+    }
+    #f-email, #f-assunto, textarea {
+        width: 95%;
+    }
+    #f-nome, #f-telefone {
+        width: calc(47.4% - 8px);
+    }
+    #btn{
+        width: 45.5vw;
+    }
+}
+@media(max-width: 750px){
+    #header-principal{
+        height: 70px;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    ul, nav{
+        border-radius: 0px;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    .descricao{
+        font-size: .6rem;
+    }
+}
+@media(max-width: 423px){
+    a{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    .descricao{
+        font-size: .4rem
+    }
+    h3{
+        font-size: .9rem;
+    }
+    .div-cardapio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .div-cardapio img {
+        width: 100%;
+        height: 70%;
+        box-shadow: 10px 10px 40px;
+    }
+    section {
+        width: 100%;
+        height: 1700px;
+        background-color: #8b4513e0;
+    }
+}
+@media(max-width: 350px){
+    a{
+        font-size: .8rem;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
 }

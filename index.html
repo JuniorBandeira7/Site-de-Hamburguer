@@ -9,17 +9,19 @@
     <title>Site Hamburguer</title>
 </head>
 <body>
-    <div style="position: absolute;" id="volta-topo"></div>
     <header id="header-principal">
-        <div><a href="#volta-topo">Home</a></div>
-        <div><a href="#header-1">Cardápio</a></div>
-        <div><a href="#delivery">Delivery</a></div>
-        <div><a href="#fale-conosco">Fale conosco</a></div>
+        <nav>
+                <span id="hamburguer"></span>
+            </button>
+            <ul>
+                <li><a href="#header-1">Cardápio</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#fale-conosco">Fale conosco</a></li>
+                <li><a href="#footer-div">rodapé</a></li>
+            </ul>
+        </nav>
     </header>
-    <div id="dvslider">
-        <button class="btSlider" onclick="troca(-1)"><</button>
-        <button class="btSlider" onclick="troca(1)">></button>
-    </div>
+    <div id="dvslider"></div>
     <section>
         <header id="header-1" class="header">
             <h1>O melhor Hamburguer da região</h1>
@@ -93,18 +95,18 @@
             </div>
         </div>
     </section>
-    <section id="delivery-section" data-anima="left">
-        <header class="header" id="delivery">
+    <section id="delivery-section">
+        <header class="header" id="delivery" data-anima="left">
             <h1>Entregamos na sua casa!</h1>
         </header>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.612781779425!2d-73.98795218459388!3d40.74854517932798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sEmpire%20State%20Building%2C%20New%20York%2C%20NY%2010001%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1643319908038!5m2!1spt-BR!2sbr"loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.612781779425!2d-73.98795218459388!3d40.74854517932798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sEmpire%20State%20Building%2C%20New%20York%2C%20NY%2010001%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1643319908038!5m2!1spt-BR!2sbr"loading="lazy" data-anima="left" id="iframe"></iframe>
         <div id="a-delivery"><a href=""><img src="Estilo/smartphone.png" alt=""></a></div>
     </section>
-    <section id="fale-conosco" data-anima="left">
-        <header>
+    <section id="fale-conosco">
+        <header data-anima="left">
             <h1>Fale conosco!</h1>
         </header>
-        <form action="">
+        <form action="" data-anima="left">
              <input type="email" name="" id="f-email" placeholder="E-mail">
             <div>
                 <input type="text" name="" id="f-nome" placeholder="Nome">
@@ -114,7 +116,7 @@
             <textarea name="" id="f-mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
             <input type="submit" value="Enviar" id="btn">
         </form>  
-        <footer>
+        <footer >
             <div id="footer-div">
                 <h2>Feito Por Junior Bandeira</h2>
                 <div>
@@ -127,9 +129,10 @@
         </footer>
     </section>
 
+
     
     
 </body>
-<script src="script/jsdoslider.js"></script>
 <script src="script/anima.js"></script>
+<script src="script/jsdosliderRes.js"></script>
 </html>
